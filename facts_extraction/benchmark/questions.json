@@ -1,0 +1,38 @@
+{
+  "documents": [
+    {
+      "id": "basic_patient_data",
+      "path": "facts_extraction/data/Basic patient data.pdf",
+      "type": "pdf",
+      "expected_facts": [
+        {
+          "fact_code": "ABC",
+          "fact_value": "1.12",
+          "fact_unit": "gr"
+        },
+        {
+          "fact_code":"CDE",
+          "fact_value":"180",
+          "fact_unit":"cm"
+        }
+      ]
+    },
+    {
+      "id": "basic_patient_data_png",
+      "path": "facts_extraction/data/Basic patient data.png",
+      "type": "png",
+      "expected_facts": [
+        {
+          "fact_code": "ABC",
+          "fact_value": "1.12",
+          "fact_unit": "gr"
+        },
+        {
+          "fact_code":"CDE",
+          "fact_value":"180",
+          "fact_unit":"cm"
+        }
+      ]
+    }
+  ]
+}

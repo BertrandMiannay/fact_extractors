@@ -1,8 +1,8 @@
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from approaches.base import BaseApproach
-from benchmark.judge import Judge
+from data_extraction.approaches.base import BaseApproach
+from data_extraction.benchmark.judge import Judge
 
 
 @dataclass

@@ -2,8 +2,8 @@ import json
 import time
 from pathlib import Path
 from api.base import BaseAPI
-from approaches.base import BaseApproach, ApproachResponse
-from approaches.utils import load_pdf_texts
+from data_extraction.approaches.base import BaseApproach, ApproachResponse
+from data_extraction.approaches.utils import load_pdf_texts
 
 SUMMARY_PROMPT = """Analyse ce document réglementaire de plongée et retourne UNIQUEMENT un objet JSON valide avec les champs suivants :
 {

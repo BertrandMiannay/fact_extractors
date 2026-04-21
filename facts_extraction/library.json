@@ -1,0 +1,12 @@
+{
+  "fact_codes": {
+    "ABC": {
+      "description": "Glycémie",
+      "allowed_units": ["ML", "gr"]
+    },
+    "CDE": {
+      "description": "Taille",
+      "allowed_units": ["cm", "m"]
+    }
+  }
+}

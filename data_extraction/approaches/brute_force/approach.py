@@ -1,6 +1,6 @@
 from api.base import BaseAPI
-from approaches.base import BaseApproach, ApproachResponse
-from approaches.utils import load_pdf_texts
+from data_extraction.approaches.base import BaseApproach, ApproachResponse
+from data_extraction.approaches.utils import load_pdf_texts
 
 SYSTEM_PROMPT = """Tu es un expert en plongée sous-marine.
 Réponds uniquement en français, de manière précise et sourcée, en te basant exclusivement sur les documents fournis.

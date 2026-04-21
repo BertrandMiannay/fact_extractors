@@ -15,6 +15,9 @@ python-dotenv = "^1.2.1"
 mistralai = "^2.3.0"
 pypdf = "^6.9.2"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.3"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
