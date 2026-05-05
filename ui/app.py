@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 
 # Streamlit adds the script's directory (ui/) to sys.path, which shadows the
-# top-level packages named data_extraction and facts_extraction.
+# top-level package facts_extraction.
 # Remove ui/ and ensure the project root comes first instead.
 _ui_path = str(Path(__file__).parent)
 if _ui_path in sys.path:
@@ -16,7 +16,7 @@ load_dotenv(Path(__file__).parent.parent / ".env")
 
 import streamlit as st
 from api.mistral_api import MistralAPI
-from ui import data_extraction, facts_extraction
+from ui import facts_extraction
 
 st.set_page_config(page_title="ChaTP - Plongée", layout="wide")
 st.title("ChaTP - Assistant plongée")
@@ -29,10 +29,4 @@ def load_api():
 
 api = load_api()
 
-tab_data, tab_facts = st.tabs(["Data Information Extraction", "Facts Extraction"])
-
-with tab_data:
-    data_extraction.render(api)
-
-with tab_facts:
-    facts_extraction.render(api)
+facts_extraction.render(api)
